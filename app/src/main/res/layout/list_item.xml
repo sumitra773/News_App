@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="4dp"
+    app:cardMaxElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/author_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="@string/guardian_tv" />
+
+        <TextView
+            android:id="@+id/section_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/dark_red"
+            tools:text="@string/politics_tv" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/section_tv"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="serif"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="italic"
+            tools:text="@string/news_tv" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_tv"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="10:00:11" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_tv"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/time_tv"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:textAppearanceSmall"
+            tools:text="20-01-2020" />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
